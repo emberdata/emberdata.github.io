@@ -97,8 +97,17 @@ body {
   line-height: 75% !important;
 }
 .sectArrow{
+  display: inline-block;
+  margin-top: -150px;
   position: relative;
-  padding-bottom: 100px;
+  width: 100px;
+  height:250px;
+  transform: rotate(230deg);
+  font-weight: bolder;
+}
+.sectArrowMain{
+  position: fixed;
+  bottom:0;
   width: 100px;
   height:250px;
 }
