@@ -98,9 +98,45 @@ a:active {
     color: #2F2F2F;
     border: 0;
 }
-.fadeIn{
-  animation-duration: 2.5s !important;
-}
 a:active, a:focus,input, input:active, input:focus{     outline: 0;     outline-style:none;     outline-width:0; }
 a:active, a:focus,button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner
 {     border: none; }
+.myCard{
+  min-width: 50%;
+    float: none;
+    margin: 0 auto;
+}
+.myCardText{
+  font-weight: 600;
+  font-size: 1.4em;
+  font-family: 'IBM Plex Sans';
+}
+.myCardTextLight{
+  font-size: 1.2em;
+  font-weight: lighter;
+  font-family: 'IBM Plex Sans';
+}
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+.portImg{
+  max-width: 50% !important;
+}
+.content{
+  font-size: 3em;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
