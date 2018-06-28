@@ -35,7 +35,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                css3: true
+                css3: true,
+                normalScrollElements: '.modal'
             });
 
 
@@ -66,29 +67,24 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <form>
+          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdPjmggBzMeoxHXnVO3jAg8Q7pDnr6oR6WvfAyQCX2yHpYG_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label>Email address</label>
+              <input type="email" class="form-control" name="entry.1522294803" id="entry.1522294803" placeholder="name@example.com" required>
             </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="entry.1009834546" id="entry.1009834546" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" name="entry.888680424" id="entry.888680424" required rows="3"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
           </form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="g-recaptcha" data-sitekey="6LfoQmEUAAAAANu5WuBRdBhLEFN6KhukhoPFWYDH"></div>
-          </div>
-          </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+
       </div>
     </div>
   </div>
@@ -131,7 +127,7 @@
 </video>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text myCardText">midsummer // film</p>
+                                    <p class="card-text myCardText">midsummer // film <br>yt</p>
                                 </div>
                             </div>
                     </div>
@@ -187,16 +183,14 @@
   </div>
 </div>
 </div>
-<div class="section animated fadeIn" id="section4">
-<div class="container-fluid">
-  <div class="row">
-    <h1 class="headBody hvr-grow">thanks for coming<span class="headSpan">.</head><h1>
-  </div>
-  <div class="row">
-    <h2 class="subHeadBody">seeya</h2>
-  </div>
-</div>
-</div>
 </div>
 
-</body>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(0);
+  $('#gform').prepend('Your message has been submitted.').fadeIn(2000);
+  });
+</script>
+<body>
+</html>

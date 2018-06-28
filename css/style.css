@@ -129,7 +129,7 @@ a:active, a:focus,button::-moz-focus-inner, input[type="reset"]::-moz-focus-inne
 }
 .content{
   font-size: 3em;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
 }
 .noSelect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -139,4 +139,9 @@ a:active, a:focus,button::-moz-focus-inner, input[type="reset"]::-moz-focus-inne
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+form{
+  font-weight: lighter;
+  font-family: 'IBM Plex Sans Condensed';
+  font-size: 1.2em;
 }
