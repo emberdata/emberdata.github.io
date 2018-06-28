@@ -77,25 +77,25 @@ body {
 }
 a:link {
     text-decoration: none;
-    color: #2F2F2F;
+    color: #5846CE;
     border: 0;
 }
 
 a:visited {
     text-decoration: none;
-    color: #2F2F2F;
+    color: #5846CE;
     border: 0;
 }
 
 a:hover {
     text-decoration: none;
-    color: #2F2F2F;
+    color: #5846CE;
     border: 0;
 }
 
 a:active {
     text-decoration: none;
-    color: #2F2F2F;
+    color: #5846CE;
     border: 0;
 }
 a:active, a:focus,input, input:active, input:focus{     outline: 0;     outline-style:none;     outline-width:0; }
