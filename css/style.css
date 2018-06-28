@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(21deg, #1360a2, #0074b4, #84b4a5);
+  transition: 1s ease-in-out;
 }
 
 .splash {}
@@ -144,4 +145,25 @@ form{
   font-weight: lighter;
   font-family: 'IBM Plex Sans Condensed';
   font-size: 1.2em;
+}
+@media only screen and (max-width: 1200px) {
+    .head {
+        font-size: 12em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .head {
+        font-size: 10em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .head {
+        font-size: 6em;
+        line-height: 100% !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .subHeadLight {
+        line-height: 100% !important;
+    }
 }
