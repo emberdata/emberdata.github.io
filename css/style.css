@@ -1,10 +1,9 @@
-
-
 .splash {
   display: inline-block;
 
 }
-hr{
+
+hr {
   border-top: 6px solid #2F2F2F;
 }
 
@@ -18,9 +17,27 @@ hr{
   transition: .4s ease-in-out;
   white-space: nowrap;
 }
+.mobileHeadBold {
+  font-size: 7em;
+  font-family: 'IBM Plex Sans Condensed';
+  color: #2F2F2F;
+  font-weight: lighter;
+  line-height: 95% !important;
+  margin: 0 auto;
+  transition: .4s ease-in-out;
+  white-space: nowrap;
+}
 
 .subHead {
   font-size: 2.7em;
+  font-weight: lighter;
+  font-family: 'IBM Plex Sans Condensed';
+  color: #2F2F2F;
+  margin-bottom: 30px;
+}
+.mobileHead {
+  font-size: 2.7em;
+
   font-weight: lighter;
   font-family: 'IBM Plex Sans Condensed';
   color: #2F2F2F;
@@ -39,7 +56,8 @@ hr{
 .headSpan {
   color: #FF2344;
 }
-.headSpan2{
+
+.headSpan2 {
   color: #2F2F2F;
 }
 
@@ -68,130 +86,167 @@ hr{
   font-weight: lighter;
   line-height: 75% !important;
 }
-.sectArrow{
+
+.sectArrow {
   display: inline-block;
   margin-top: -150px;
   position: relative;
   width: 100px;
-  height:250px;
+  height: 250px;
   transform: rotate(230deg);
   font-weight: bolder;
 }
-.sectArrowMain{
+
+.sectArrowMain {
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100px;
-  height:250px;
+  height: 250px;
 }
+
 a:link {
-    text-decoration: none;
-    color: #4A5899;
-    border: 0;
+  text-decoration: none;
+  color: #4A5899;
+  border: 0;
 }
 
 a:visited {
-    text-decoration: none;
-    color: #4A5899;
-    border: 0;
+  text-decoration: none;
+  color: #4A5899;
+  border: 0;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #4A5899;
-    border: 0;
+  text-decoration: none;
+  color: #4A5899;
+  border: 0;
 }
 
 a:active {
-    text-decoration: none;
-    color: #4A5899;
-    border: 0;
+  text-decoration: none;
+  color: #4A5899;
+  border: 0;
 }
-a:active, a:focus,input, input:active, input:focus{     outline: 0;     outline-style:none;     outline-width:0; }
-a:active, a:focus,button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner
-{     border: none; }
-.myCard{
+
+a:active, a:focus, input, input:active, input:focus {
+  outline: 0;
+  outline-style: none;
+  outline-width: 0;
+}
+
+a:active, a:focus, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"]>input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+.myCard {
   min-width: 50%;
-    float: none;
-    margin: 0 auto;
+  float: none;
+  margin: 0 auto;
 }
-.myCardText{
+
+.myCardText {
   font-weight: 600;
   font-size: 1.4em;
   font-family: 'IBM Plex Sans';
 }
-.myCardTextLight{
+
+.myCardTextLight {
   font-size: 1.2em;
   font-weight: lighter;
   font-family: 'IBM Plex Sans';
 }
+
 .modal-full {
-    min-width: 100%;
-    margin: 0;
+  min-width: 100%;
+  margin: 0;
 }
 
 .modal-full .modal-content {
-    min-height: 100vh;
+  min-height: 100vh;
 }
-.portImg{
+
+.portImg {
   max-width: 50% !important;
 }
-.content{
+
+.content {
   font-size: 3em;
   font-family: 'IBM Plex Sans Condensed', sans-serif !important;
 }
+
 .noSelect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-form{
+
+form {
   font-weight: lighter;
   font-family: 'IBM Plex Sans Condensed';
   font-size: 1.2em;
 }
+
 @media only screen and (max-width: 1660px) {
-    .splash {
-  zoom: 0.8;
-  -moz-transform: scale(0.8);
-    }
+  .splash {
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+  }
 }
+
 @media only screen and (max-width: 1324px) {
-    .splash {
-      zoom: 0.7;
-  -moz-transform: scale(0.7);
-    }
+  .splash {
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
+  }
 }
+
 @media only screen and (max-width: 1180px) {
-    .splash {
-      zoom: 0.6;
-  -moz-transform: scale(0.6);
-    }
+  .splash {
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+  }
 }
+
 @media only screen and (max-width: 995px) {
-    .splash {
-      zoom: 0.5;
-  -moz-transform: scale(0.5);
-  text-align:center;
-    }
+  .splash{
+    display: none;
+  }
 }
-@media only screen and (max-width: 838px) {
-    .splash {
-      zoom: 0.4;
-  -moz-transform: scale(0.4);
-  text-align:center;
-    }
-}
-.contactText{
+
+.contactText {
   cursor: pointer;
 }
+
 #particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+@media only screen and (min-width: 996px) {
+  .mobileHead {
+    display: none;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .mobileHeadBold {
+    display: none;
+  }
+}
+@media only screen and (max-width: 483px) {
+  .mobileHeadBold, .mobileHead {
+    zoom: 0.6;
+    -moz-transform: scale(.6);
+  }
 }
