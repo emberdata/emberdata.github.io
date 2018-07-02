@@ -1,5 +1,6 @@
 .splash {
   display: inline-block;
+      transition: .7s ease-in-out;
 
 }
 
@@ -14,7 +15,6 @@ hr {
   font-weight: lighter;
   line-height: 95% !important;
   margin: 0 auto;
-  transition: .4s ease-in-out;
   white-space: nowrap;
 }
 .mobileHeadBold {
@@ -225,6 +225,7 @@ form {
 
 .contactText {
   cursor: pointer;
+  font-size: 13vw;
 }
 
 #particles-js {
