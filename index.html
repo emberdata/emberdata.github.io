@@ -3,63 +3,63 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>John Korhel</title>
+  <title>John Korhel</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
-    <link href="css/iziModal.min.css" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet">
+  <link href="css/iziModal.min.css" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#myBtn").click(function() {
-                $("#myModal").modal();
-            });
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myBtn").click(function() {
+        $("#myModal").modal();
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        css3: true,
+        normalScrollElements: '.modal'
+      });
+
+
+      $('#arrowMove').click(function() {
+        $.fn.fullpage.moveSectionDown();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.modal').each(function() {
+        var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function() {
+
+          $(this).find('iframe').attr('src', '');
+          $(this).find('iframe').attr('src', src);
+
         });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                css3: true,
-                normalScrollElements: '.modal'
-            });
-
-
-            $('#arrowMove').click(function() {
-                $.fn.fullpage.moveSectionDown();
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.modal').each(function() {
-                var src = $(this).find('iframe').attr('src');
-
-                $(this).on('click', function() {
-
-                    $(this).find('iframe').attr('src', '');
-                    $(this).find('iframe').attr('src', src);
-
-                });
-            });
-        });
-    </script>
-    <script src="js/bootstrap.min.js"></script>
+      });
+    });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body class="noSelect">
@@ -72,15 +72,15 @@
               <label>Email address</label>
               <input type="email" class="form-control" name="entry.1522294803" id="entry.1522294803" placeholder="name@example.com" required>
             </div>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" name="entry.1009834546" id="entry.1009834546" placeholder="John Smith" required>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" name="entry.888680424" id="entry.888680424" required rows="3"></textarea>
-          </div>
-          <input class="btn btn-primary" type="submit" value="Submit">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" name="entry.1009834546" id="entry.1009834546" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" name="entry.888680424" id="entry.888680424" required rows="3"></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Submit">
           </form>
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
@@ -88,81 +88,83 @@
       </div>
     </div>
   </div>
+  <div id="particles-js"></div>
   <div id="fullpage">
     <div class="section animated fadeIn" id="section0">
       <header class="splash">
         <div class="container">
           <div class="row">
-            <h1 class="head">I'm John<span class="headSpan">.</span></h1>
-                        </div>
-                    </div>
-                    </header>
-                </div>
-                <div class="section animated fadeIn" id="section1">
-                    <div class="container-fluid">
-                            <div class="card myCard" style="width: 18rem;">
-                                <div class="card-img-top embed-responsive embed-responsive-16by9">
-                                    <video width="320" height="240" poster="mid1.jpg" controls preload="none">
+            <h1 class="head">I'm John</h1>
+          </div>
+        </div>
+        <div class="container-fluid offset-lg-2">
+          <hr></hr>
+          <h1 class="subHead">Cinematographer, web designer, and visual artist based in Parker, CO.</h1>
+        </div>
+      </header>
+    </div>
+    <div class="section animated fadeIn" id="section1">
+      <div class="container-fluid">
+        <div class="card myCard" style="width: 18rem;">
+          <div class="card-img-top embed-responsive embed-responsive-16by9">
+            <video width="320" height="240" poster="mid1.jpg" controls preload="none">
   <source src="midsummer.mp4" type="video/mp4">
     <source src="midsummer.ogg" type="video/ogg">
 </video>
-                                </div>
+          </div>
 
-                                <div class="card-body">
-                                    <p class="card-text myCardText"><a href="https://www.youtube.com/watch?v=rFHbklEtS7Y" target="_blank">midsummer</a> // film</p>
-                                </div>
+          <div class="card-body">
+            <p class="card-text myCardText"><a href="https://www.youtube.com/watch?v=rFHbklEtS7Y" target="_blank">midsummer</a> // film</p>
+          </div>
 
-                            </div>
-                    </div>
-                </div>
-                <div class="section animated fadeIn" id="section2">
-                    <div class="container-fluid">
-                        <a href="https://sasquatchtv.github.io/" target="_blank">
-                            <div class="card myCard" style="width: 18rem;">
-                                <img class="card-img-top" src="squatch1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text myCardText"><a class="cardLink" href="https://sasquatchtv.github.io/" target="_blank">sasquatch advertising</a> // website</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="section animated fadeIn" id="section3">
-                    <div class="container-fluid">
-                            <div class="card myCard" style="width: 18rem;">
-                                <div class="card-img-top embed-responsive embed-responsive-16by9">
-                                    <video width="320" height="240" controls poster="mid2.jpg" "preload="none"">
+        </div>
+      </div>
+    </div>
+    <div class="section animated fadeIn" id="section2">
+      <div class="container-fluid">
+        <a href="https://sasquatchtv.github.io/" target="_blank">
+          <div class="card myCard" style="width: 18rem;">
+            <img class="card-img-top" src="squatch1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text myCardText"><a class="cardLink" href="https://sasquatchtv.github.io/" target="_blank">sasquatch advertising</a> // website</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="section animated fadeIn" id="section3">
+      <div class="container-fluid">
+        <div class="card myCard" style="width: 18rem;">
+          <div class="card-img-top embed-responsive embed-responsive-16by9">
+            <video width="320" height="240" controls poster="mid2.jpg" "preload="none "">
 <source src="melancholic.mp4" type="video/mp4">
   <source src="melancholic.ogg" type="video/ogg">
 </video>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text myCardText"><a href="https://www.youtube.com/watch?v=n-jSiJHyvc0" target="_blank"> melancholic daze</a> // film</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="section animated fadeIn" id="section4">
-                    <div class="container-fluid">
-                        <a href="http://johnkorhel.github.io/" target="_blank">
-                            <div class="card myCard" style="width: 18rem;">
-                                <img class="card-img-top" src="ar.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text myCardText"><a href="http://johnkorhel.github.io/" target="_blank"> ar </a> // website</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="section animated fadeIn" id="section4">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <a class="contactText" data-toggle="modal" data-target="#contact">
-                                <h1 class="headBody hvr-grow">contact<span class="headSpan">.</head><h1>
+          </div>
+          <div class="card-body">
+            <p class="card-text myCardText"><a href="https://www.youtube.com/watch?v=n-jSiJHyvc0" target="_blank"> melancholic daze</a> // film</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section animated fadeIn" id="section4">
+      <div class="container-fluid">
+        <a href="http://johnkorhel.github.io/" target="_blank">
+          <div class="card myCard" style="width: 18rem;">
+            <img class="card-img-top" src="ar.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text myCardText"><a href="http://johnkorhel.github.io/" target="_blank"> ar </a> // website</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="section animated fadeIn" id="section4">
+      <div class="container-fluid">
+        <div class="row">
+          <a class="contactText" data-toggle="modal" data-target="#contact">
+            <h1 class="headBody hvr-grow">contact<span class="headSpan">.</head><h1>
     </a>
-  </div>
-  <div class="row">
-    <h2 class="subHeadBody">reach out to me.</h2>
   </div>
 </div>
 </div>
@@ -175,5 +177,7 @@ $('#gform').on('submit', function(e) {
   $('#gform').prepend('Your message has been submitted.').fadeIn(2000);
   });
 </script>
+<script src="js/particles.js"></script>
+            <script src="js/app.js"></script>
 <body>
 </html>
