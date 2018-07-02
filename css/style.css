@@ -1,7 +1,6 @@
 .splash {
   display: inline-block;
-      transition: .7s ease-in-out;
-
+  transition: .7s ease-in-out;
 }
 
 hr {
@@ -17,6 +16,7 @@ hr {
   margin: 0 auto;
   white-space: nowrap;
 }
+
 .mobileHeadBold {
   font-size: 7em;
   font-family: 'IBM Plex Sans Condensed';
@@ -35,9 +35,9 @@ hr {
   color: #2F2F2F;
   margin-bottom: 30px;
 }
+
 .mobileHead {
   font-size: 2.7em;
-
   font-weight: lighter;
   font-family: 'IBM Plex Sans Condensed';
   color: #2F2F2F;
@@ -218,7 +218,7 @@ form {
 }
 
 @media only screen and (max-width: 995px) {
-  .splash{
+  .splash {
     display: none;
   }
 }
@@ -235,16 +235,19 @@ form {
   left: 0;
   top: 0;
 }
+
 @media only screen and (min-width: 996px) {
   .mobileHead {
     display: none;
   }
 }
+
 @media only screen and (min-width: 996px) {
   .mobileHeadBold {
     display: none;
   }
 }
+
 @media only screen and (max-width: 483px) {
   .mobileHeadBold, .mobileHead {
     zoom: 0.6;
