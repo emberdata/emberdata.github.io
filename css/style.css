@@ -11,6 +11,7 @@ body {
   color: #2F2F2F;
   font-weight: 700;
   line-height: 85% !important;
+  margin: 0 auto;
 }
 
 .subHead {
@@ -78,25 +79,25 @@ body {
 }
 a:link {
     text-decoration: none;
-    color: #5846CE;
+    color: #4A5899;
     border: 0;
 }
 
 a:visited {
     text-decoration: none;
-    color: #5846CE;
+    color: #4A5899;
     border: 0;
 }
 
 a:hover {
     text-decoration: none;
-    color: #5846CE;
+    color: #4A5899;
     border: 0;
 }
 
 a:active {
     text-decoration: none;
-    color: #5846CE;
+    color: #4A5899;
     border: 0;
 }
 a:active, a:focus,input, input:active, input:focus{     outline: 0;     outline-style:none;     outline-width:0; }
@@ -148,12 +149,12 @@ form{
 }
 @media only screen and (max-width: 1200px) {
     .head {
-        font-size: 12em;
+        font-size: 10em;
     }
 }
 @media only screen and (max-width: 1000px) {
     .head {
-        font-size: 10em;
+        font-size: 8em;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -162,8 +163,21 @@ form{
         line-height: 100% !important;
     }
 }
+@media only screen and (max-width: 490px) {
+    .head {
+        font-size: 4.5em;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .head {
+        font-size: 4em;
+    }
+}
 @media only screen and (max-width: 768px) {
     .subHeadLight {
         line-height: 100% !important;
     }
+}
+.contactText{
+  cursor: pointer;
 }
