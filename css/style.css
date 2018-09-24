@@ -254,3 +254,18 @@ form {
     -moz-transform: scale(.6);
   }
 }
+.summerText a{
+  color: #8ED081;
+}
+
+.dazeText a{
+  color: #F2F3AE;
+}
+
+.arText a{
+  color: #FFC09F;
+}
+
+.progText a{
+  color: #B7D1DA;
+}
