@@ -2,212 +2,117 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John Korhel</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="fullpage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Raleway&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-  <title>John Korhel</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="css/hover.css" rel="stylesheet">
-  <link href="css/iziModal.min.css" rel="stylesheet">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
-  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("#myBtn").click(function() {
-        $("#myModal").modal();
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        css3: true,
-        normalScrollElements: '.modal'
-      });
-
-
-      $('#arrowMove').click(function() {
-        $.fn.fullpage.moveSectionDown();
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('.modal').each(function() {
-        var src = $(this).find('iframe').attr('src');
-
-        $(this).on('click', function() {
-
-          $(this).find('iframe').attr('src', '');
-          $(this).find('iframe').attr('src', src);
-
-        });
-      });
-    });
-  </script>
-  <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body class="noSelect">
-  <div class="modal animated fadeIn" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdPjmggBzMeoxHXnVO3jAg8Q7pDnr6oR6WvfAyQCX2yHpYG_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" class="form-control" name="entry.1522294803" id="entry.1522294803" placeholder="name@example.com" required>
-            </div>
-            <div class="form-group">
-              <label>Name</label>
-              <input type="text" class="form-control" name="entry.1009834546" id="entry.1009834546" placeholder="John Smith" required>
-            </div>
-            <div class="form-group">
-              <label>Message</label>
-              <textarea class="form-control" name="entry.888680424" id="entry.888680424" required rows="3"></textarea>
-            </div>
-            <input class="btn btn-primary" type="submit" value="Submit">
-          </form>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div id="particles-js"></div>
-  <div id="fullpage">
-    <div class="section animated fadeIn" id="section0">
-      <header class="splash">
-        <div class="container">
-          <div class="row">
-            <h1 class="head">I'm John</h1>
-          </div>
-        </div>
-        <div class="container-fluid offset-lg-2">
-
-          <h1 class="subHead">Cinematographer, web designer, and visual artist based in Parker, CO.</h1>
-        </div>
-      </header>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mx-auto">
-            <h1 class="mobileHeadBold">I'm John</h1>
-            <h1 class="mobileHead">Cinematographer, web designer, and visual artist based in Parker, CO.</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section animated fadeIn" id="section1">
-      <div class="container-fluid">
-        <div class="card myCard" style="width: 18rem;">
-          <div class="card-img-top embed-responsive embed-responsive-16by9">
-            <video width="320" height="240" poster="mid1.jpg" controls preload="none">
-  <source src="midsummer.mp4" type="video/mp4">
-    <source src="midsummer.ogg" type="video/ogg">
-</video>
-          </div>
-
-          <div class="card-body">
-            <p class="card-text myCardText summerText"><a href="https://www.youtube.com/watch?v=rFHbklEtS7Y" target="_blank">midsummer</a> // film</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="section animated fadeIn" id="section2">
-      <div class="container-fluid">
-        <div class="card myCard" style="width: 18rem;">
-          <div class="card-img-top embed-responsive embed-responsive-16by9">
-            <video width="320" height="240" controls poster="mid2.jpg" "preload="none "">
-<source src="melancholic.mp4" type="video/mp4">
-  <source src="melancholic.ogg" type="video/ogg">
-</video>
-          </div>
-          <div class="card-body">
-            <p class="card-text myCardText dazeText"><a href="https://www.youtube.com/watch?v=n-jSiJHyvc0" target="_blank"> melancholic daze</a> // film</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section animated fadeIn" id="section3">
-      <div class="container-fluid">
-        <a href="http://johnkorhel.github.io/" target="_blank">
-          <div class="card myCard" style="width: 18rem;">
-            <img class="card-img-top" src="ar.png" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text myCardText arText"><a href="http://johnkorhel.github.io/" target="_blank"> ar </a> // website</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="section animated fadeIn" id="section4">
-      <div class="container-fluid">
-        <div class="card myCard" style="width: 18rem;">
-          <div class="card-img-top embed-responsive embed-responsive-16by9">
-            <video width="320" height="240" controls poster="prog.png" "preload="none "">
-<source src="progress.mp4" type="video/mp4">
-  <source src="progress.ogg" type="video/ogg">
-</video>
-          </div>
-          <div class="card-body">
-            <p class="card-text myCardText progText"><a href="https://www.youtube.com/watch?v=8OMhHZkG6Xc" target="_blank"> progress</a> // film</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section animated fadeIn" id="section5">
-      <div class="container-fluid">
-        <div class="row">
-          <a class="contactText" data-toggle="modal" data-target="#contact">
-            <h1 class="headBody hvr-grow">contact<span class="headSpan">.</head><h1>
-    </a>
-  </div>
-</div>
-</div>
-</div>
-
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(0);
-  $('#gform').prepend('Your message has been submitted.').fadeIn(2000);
-  });
-</script>
-<script src="js/particles.js"></script>
-            <script src="js/app.js"></script>
 <body>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="cont">
+                <div id="term" class="term term-ready">
+                    <input class="term-input-hide" />
+                    <div class="term-cont">
+                        <div class="term-line">
+                            <span class="term-prompt">~/user/joj # </span><span class="term-cmd current">John Korhel |
+                                Web Developer </span><span class="term-caret">&#x2588;</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section " id="section1">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://artisticfloorsbydesign.com/" target="_blank"><img class="portfolioItem"
+                                src="img/testing.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://lhstsa.com/" target="_blank"><img class="portfolioItem" src="img/LHS.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="ldtText">In progress...</span><br>
+                        <img class="portfolioItem" src="img/LDTF.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="contactText">john.korhel@colorado.edu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="fullpage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF']
+        });
+    </script>
+    <script>
+        setInterval(caretToggle, 500);
+
+        function caretToggle() {
+            var caret = document.getElementsByClassName("term-caret")[0];
+            if (caret.classList.contains('blink')) {
+                caret.classList.remove('blink');
+            } else {
+                caret.classList.add('blink');
+            }
+        }
+
+    </script>
+
+</body>
+
 </html>
